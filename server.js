@@ -4,5 +4,8 @@ app.use(express.static("test_project")); // myApp will be the same folder name.
 app.get('/', function (req, res,next) {
  res.redirect('/'); 
 });
-app.listen(8080, 'localhost');
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
 console.log("MyProject Server is Listening on port 8080");
