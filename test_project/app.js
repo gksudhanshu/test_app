@@ -6,73 +6,73 @@ app.controller('MainCtrl', function ($scope) {
             "id": '1',
             "questionText": "Why is the sky blue?",
             "Options": [{
-                    "answerText": "1Correct"
+                    "answerText": "Option1"
                 },
                 {
-                    "answerText": "1blah blah 2"
+                    "answerText": "Option2"
                 },
                 {
-                    "answerText": "1blah blah 3"
+                    "answerText": "Option3"
                 },
                 {
-                    "answerText": "1blah blah 4"
+                    "answerText": "Option4"
                 }
             ],
-            "CorrectAnswer": "1Correct"
+            "CorrectAnswer": "Option1"
         },
         {
             "id": '2',
             "questionText": "Why is the meaning of life?",
             "Options": [{
-                    "answerText": "2blah blah 1"
+                    "answerText": "Option1"
                 },
                 {
-                    "answerText": "2Correct"
+                    "answerText": "Option2"
                 },
                 {
-                    "answerText": "2blah blah 3"
+                    "answerText": "Option3"
                 },
                 {
-                    "answerText": "2blah blah 4"
+                    "answerText": "Option4"
                 }
             ],
-            "CorrectAnswer": "2Correct"
+            "CorrectAnswer": "Option2"
         },
         {
             "id": '3',
             "questionText": "How many pens are in $10.00?",
             "Options": [{
-                    "answerText": "3blah blah 1"
+                    "answerText": "Option1"
                 },
                 {
-                    "answerText": "3blah blah 2"
+                    "answerText": "Option2"
                 },
                 {
-                    "answerText": "3Correct"
+                    "answerText": "Option3"
                 },
                 {
-                    "answerText": "3blah blah 4"
+                    "answerText": "Option4"
                 }
             ],
-            "CorrectAnswer": "3Correct"
+            "CorrectAnswer": "Option3"
         },
         {
             "id": '4',
             "questionText": "What is the default program?",
             "Options": [{
-                    "answerText": "4blah blah 1"
+                    "answerText": "Option1"
                 },
                 {
-                    "answerText": "4Correct"
+                    "answerText": "Option2"
                 },
                 {
-                    "answerText": "4blah blah 3"
+                    "answerText": "Option3"
                 },
                 {
-                    "answerText": "4blah blah 4"
+                    "answerText": "Option4"
                 }
             ],
-            "CorrectAnswer": "4Correct"
+            "CorrectAnswer": "Option2"
         }
     ];
 
@@ -85,7 +85,7 @@ app.controller('MainCtrl', function ($scope) {
 
     //On submit
     $scope.ShowResult = function () {
-
+      $scope.isShowGraph = false
         $scope.Correct = [];
         $scope.InCorrect = [];
         $scope.isNotAnswered = [];
